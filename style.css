@@ -1,20 +1,25 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #001f3f; /* Dark blue background */
-    color: white; /* Default text color for better readability */
-    margin: 0;
-    padding: 0;
+    color: white;
 }
 
-/* Header styles */
+/* Header Styles */
 header {
-    background-color: rgba(0, 0, 0, 0.7); /* Slightly transparent header */
-    color: white;
-    padding: 15px;
+    background-color: #001f3f;
+    padding: 20px;
     text-align: center;
 }
 
-/* Navigation styles */
+/* Navigation Styles */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -22,89 +27,101 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 15px;
+    margin: 0 15px;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-/* Main content styles */
+/* Main Section Styles */
 main {
     padding: 20px;
 }
 
-/* About text styles */
+/* About Text Styles */
 .about-text {
-    color: black; /* Black text for visibility */
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Light effect on text */
+    color: #f0f0f0; /* Light text for visibility */
 }
 
-/* Footer styles */
+/* Footer Styles */
 footer {
+    background-color: #001f3f;
+    padding: 10px;
     text-align: center;
-    margin-top: 20px;
 }
-/* Contact info styles */
-.contact-info {
-    display: none; /* Initially hidden */
-    background-color: pink; /* Pink background for contact info */
-    padding: 20px; /* Padding around contact info */
-    border-radius: 15px; /* Rounded corners */
-    color: black; /* Black text color */
-    text-align: center; /* Center-aligns the contact information */
-}
-/* Modal styles */
+
+/* Modal Styles */
 .modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
     left: 0;
     top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgba(0, 0, 0, 0.8); /* Dark overlay for the modal */
-    padding-top: 60px; 
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Fallback color */
 }
 
+/* Modal Content Styles */
 .modal-content {
-    background-color: lightgray; /* Ensure this is set to light gray */
-    border-radius: 15px; /* Rounded corners for a modern look */
-    margin: 5% auto; 
-    padding: 40px; /* Increased padding for better spacing */
-    border: 2px solid #888; /* Border for the modal */
-    width: 80%; 
-    color: black; /* Black text in modal */
-    text-align: center; /* Center text in modal */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    background-color: rgba(200, 200, 200, 0.9); /* Light gray background */
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888; /* Light gray border */
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center text within modal */
 }
 
+/* Close Button Styles */
 .close {
-    color: #aaa;
-    float: right;
+    color: #ff6347; /* A vibrant color for the close button */
     font-size: 28px;
     font-weight: bold;
+    cursor: pointer; /* Pointer cursor on hover */
 }
 
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+/* Java code styling */
+.java-code {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background for code */
+    color: #00ff00; /* Bright green for code */
+    padding: 10px; /* Padding for better spacing */
+    border-radius: 8px; /* Rounded corners for the code block */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for code */
+    white-space: pre-wrap; /* Preserve whitespace */
+    margin-top: 15px; /* Space above code block */
 }
 
-/* Additional styles for text */
-h2 {
-    margin: 0 0 10px; /* Spacing below the heading */
-    font-size: 24px; /* Font size for the heading */
+/* Modal background image styles */
+.modal-background {
+    position: relative; /* Position relative for absolute children */
+    text-align: center; /* Center text within modal */
 }
 
-p {
-    font-size: 18px; /* Font size for the paragraph */
+/* Background image */
+.modal-background:before {
+    content: '';
+    background-image: url('https://example.com/path-to-your-tree-branches-image.jpg'); /* Replace with your image URL */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5; /* Slightly transparent */
+    z-index: -1; /* Behind the content */
+    background-size: cover; /* Cover the entire modal */
 }
+
 /* Icon styles */
 .icon {
-    width: 20px; /* Width of the icons */
-    height: 20px; /*
+    width: 20px; /* Adjust the size of the icon */
+    vertical-align: middle; /* Align icons with text */
+}
+
+/* Contact Info Styles */
+.contact-info {
+    background-color: pink; /* Pink background for contact info */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    display: none; /* Initially hidden */
+    color: black; /* Text color */
+    text-align: center; /* Centered text */
+}
