@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to ArtCode</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <script>
+        // Function to show the pop-up message
+        function showWelcomeMessage() {
+            document.getElementById('welcomeModal').style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById('welcomeModal').style.display = "none";
+        }
+
+        // Show the message when the page loads
+        window.onload = showWelcomeMessage;
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to ArtCode</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <p>Hi! I'm Fateme Abbaszadeh, a 25-year-old woman with a passion for both art and technology...</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 ArtCode</p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="welcomeModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>Welcome to your ArtCode utopia, where you can be yourself!</p>
+        </div>
+    </div>
+</body>
+</html>
