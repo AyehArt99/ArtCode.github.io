@@ -6,15 +6,22 @@
     <title>ArtCode</title>
     <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
     <script>
-        // Function to toggle contact information
-        function toggleContactInfo() {
-            var contactInfo = document.getElementById('contact-info');
-            if (contactInfo.style.display === "none" || contactInfo.style.display === "") {
-                contactInfo.style.display = "block"; // Show contact info
-            } else {
-                contactInfo.style.display = "none"; // Hide contact info
-            }
+        // Function to toggle visibility of sections
+        function showSection(section) {
+            // Hide all sections
+            document.getElementById('my-story').style.display = "none";
+            document.getElementById('products').style.display = "none";
+            document.getElementById('events').style.display = "none";
+            document.getElementById('contact-info').style.display = "none";
+
+            // Show the selected section
+            document.getElementById(section).style.display = "block";
         }
+
+        // Show My Story section by default when the page loads
+        window.onload = function() {
+            showSection('my-story');
+        };
     </script>
 </head>
 <body>
@@ -22,18 +29,31 @@
         <h1>ArtCode</h1>
         <nav>
             <ul>
-                <li><a href="index.html">My Story</a></li> <!-- Changed from Home to My Story -->
-                <li><a href="about.html">Products</a></li> <!-- Changed from About to Products -->
-                <li><a href="gallery.html">Events</a></li> <!-- Changed from Gallery to Events -->
+                <li><a href="#" onclick="showSection('my-story')">My Story</a></li> <!-- My Story link -->
+                <li><a href="#" onclick="showSection('products')">Products</a></li> <!-- Products link -->
+                <li><a href="#" onclick="showSection('events')">Events</a></li> <!-- Events link -->
                 <li><a href="#" onclick="toggleContactInfo()">Contact</a></li> <!-- Call the function here -->
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
+        <!-- My Story Section -->
+        <section id="my-story">
             <h2>About Me</h2>
             <p class="about-text">Hi! I'm Fateme Abbaszadeh, a 25-year-old woman with a passion for both art and technology. I studied IT and didn't want to lose my creativity for art, so I decided to create a place where beginners, art lovers, technology enthusiasts, and big companies can feel at home and connect with their interests.</p>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" style="display: none;">
+            <h2>Our Products</h2>
+            <p>Discover our range of innovative art and technology products that inspire creativity and connectivity.</p>
+        </section>
+
+        <!-- Events Section -->
+        <section id="events" style="display: none;">
+            <h2>Upcoming Events</h2>
+            <p>Stay tuned for exciting events that blend art and technology!</p>
         </section>
     </main>
 
