@@ -46,7 +46,15 @@ footer {
     text-align: center;
     margin-top: 20px;
 }
-
+/* Contact info styles */
+.contact-info {
+    display: none; /* Initially hidden */
+    background-color: pink; /* Pink background for contact info */
+    padding: 20px; /* Padding around contact info */
+    border-radius: 15px; /* Rounded corners */
+    color: black; /* Black text color */
+    text-align: center; /* Center-aligns the contact information */
+}
 /* Modal styles */
 .modal {
     display: none; 
@@ -62,7 +70,7 @@ footer {
 }
 
 .modal-content {
-    background-color: lightgray; /* Light gray background for the modal */
+    background-color: lightgray; /* Ensure this is set to light gray */
     border-radius: 15px; /* Rounded corners for a modern look */
     margin: 5% auto; 
     padding: 40px; /* Increased padding for better spacing */
@@ -96,61 +104,7 @@ h2 {
 p {
     font-size: 18px; /* Font size for the paragraph */
 }
-
-
-.modal-content {
-    background-color: darkgreen; /* Dark green background for the modal */
-    margin: 5% auto; 
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; 
-    color: black; /* Black text in modal */
-    text-align: center; /* Center text in modal */
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-button {
-    background-color: white; /* White button */
-    color: darkgreen; /* Dark green text for button */
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px; /* Space above the button */
-}
-
-button:hover {
-    background-color: lightgray; /* Button hover effect */
-}
-.contact-info {
-    text-align: center; /* Center-aligns the contact information */
-    margin-top: 20px; /* Space above the contact section */
-}
-
-.contact-info a {
-    color: white; /* White text color */
-    text-decoration: none; /* Removes underline from links */
-    font-size: 18px; /* Font size for contact information */
-}
-
+/* Icon styles */
 .icon {
     width: 20px; /* Width of the icons */
-    height: 20px; /* Height of the icons */
-    vertical-align: middle; /* Aligns the icon with text */
-    margin-right: 5px; /* Space between icon and text */
-}
-
+    height: 20px; /*
