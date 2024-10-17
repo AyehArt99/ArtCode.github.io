@@ -22,16 +22,26 @@
         window.onload = function() {
             showSection('my-story');
         };
+
+        // Toggle contact information visibility
+        function toggleContactInfo() {
+            var contactInfo = document.getElementById('contact-info');
+            if (contactInfo.style.display === "none" || contactInfo.style.display === "") {
+                showSection('contact-info');
+            } else {
+                contactInfo.style.display = "none"; // Hide contact info
+            }
+        }
     </script>
 </head>
 <body>
     <header>
-        <h1>ArtCode</h1>
+        <h1><a href="#" onclick="showSection('my-story')">ArtCode</a></h1> <!-- Make the title clickable -->
         <nav>
             <ul>
-                <li><a href="#" onclick="showSection('my-story')">My Story</a></li> <!-- My Story link -->
-                <li><a href="#" onclick="showSection('products')">Products</a></li> <!-- Products link -->
-                <li><a href="#" onclick="showSection('events')">Events</a></li> <!-- Events link -->
+                <li><a href="#" onclick="showSection('my-story')">My Story</a></li>
+                <li><a href="#" onclick="showSection('products')">Products</a></li>
+                <li><a href="#" onclick="showSection('events')">Events</a></li>
                 <li><a href="#" onclick="toggleContactInfo()">Contact</a></li> <!-- Call the function here -->
             </ul>
         </nav>
