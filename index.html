@@ -3,18 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to ArtCode</title>
+    <title>ArtCode</title>
     <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
     <script>
-        // Function to show the pop-up message
-        function showWelcomeMessage() {
-            document.getElementById('welcomeModal').style.display = "block";
-        }
-
-        function closeModal() {
-            document.getElementById('welcomeModal').style.display = "none";
-        }
-
         // Function to toggle contact information
         function toggleContactInfo() {
             var contactInfo = document.getElementById('contact-info');
@@ -24,19 +15,16 @@
                 contactInfo.style.display = "none"; // Hide contact info
             }
         }
-
-        // Show the message when the page loads
-        window.onload = showWelcomeMessage;
     </script>
 </head>
 <body>
     <header>
-        <h1>Welcome to ArtCode</h1>
+        <h1>ArtCode</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="index.html">My Story</a></li> <!-- Changed from Home to My Story -->
+                <li><a href="about.html">Products</a></li> <!-- Changed from About to Products -->
+                <li><a href="gallery.html">Events</a></li> <!-- Changed from Gallery to Events -->
                 <li><a href="#" onclick="toggleContactInfo()">Contact</a></li> <!-- Call the function here -->
             </ul>
         </nav>
@@ -51,41 +39,23 @@
 
     <footer>
         <p>© 2024 ArtCode</p>
-        <div class="contact-info" id="contact-info" style="display: none;"> <!-- Initially hidden -->
-            <h2>Contact</h2>
-            <p>
-                <a href="https://www.instagram.com/ayehmohamadi" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/240px-Instagram_logo_2022.svg.png" alt="Instagram" class="icon">
-                    @ayehmohamadi
-                </a>
-            </p>
-            <p>
-                <a href="mailto:fabbaszadeh1999@gmail.com">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Gmail_Icon_%282020-2021%29.png/128px-Gmail_Icon_%282020-2021%29.png" alt="Gmail" class="icon">
-                    fabbaszadeh1999@gmail.com
-                </a>
-            </p>
-        </div>
     </footer>
 
-    <!-- Modal -->
-    <div id="welcomeModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <div class="modal-background">
-                <h2>Experience the Fusion of Art and Technology</h2>
-                <p>Welcome to ArtCode</p>
-                <pre class="java-code">
-public class ArtCode {
-    public static void main(String[] args) {
-        System.out.println("Welcome to ArtCode Utopia!");
-    }
-}
-                </pre>
-                <!-- Optional rose image -->
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Pink_rose_%2820410185396%29.jpg/800px-Pink_rose_%2820410185396%29.jpg" alt="Rose" class="rose" style="top: 10%; left: 20%;">
-            </div>
-        </div>
+    <!-- Contact Info -->
+    <div class="contact-info" id="contact-info" style="display: none;"> <!-- Initially hidden -->
+        <h2>Contact</h2>
+        <p>
+            <a href="https://www.instagram.com/ayehmohamadi" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/240px-Instagram_logo_2022.svg.png" alt="Instagram" class="icon">
+                @ayehmohamadi
+            </a>
+        </p>
+        <p>
+            <a href="mailto:fabbaszadeh1999@gmail.com">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Gmail_Icon_%282020-2021%29.png/128px-Gmail_Icon_%282020-2021%29.png" alt="Gmail" class="icon">
+                fabbaszadeh1999@gmail.com
+            </a>
+        </p>
     </div>
 </body>
 </html>
