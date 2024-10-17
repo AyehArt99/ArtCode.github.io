@@ -19,6 +19,11 @@ header {
     text-align: center;
 }
 
+header h1 a {
+    text-decoration: none; /* Remove underline from link */
+    color: black; /* Title link color */
+}
+
 /* Navigation Styles */
 nav ul {
     list-style-type: none;
