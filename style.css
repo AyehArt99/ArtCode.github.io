@@ -8,13 +8,13 @@
 /* Body Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #001f3f; /* Dark blue background */
-    color: white;
+    background-color: #ADD8E6; /* Light blue background */
+    color: black; /* Black text */
 }
 
 /* Header Styles */
 header {
-    background-color: #001f3f;
+    background-color: #f0f0f0; /* Light gray header for contrast */
     padding: 20px;
     text-align: center;
 }
@@ -37,91 +37,27 @@ main {
 
 /* About Text Styles */
 .about-text {
-    color: #f0f0f0; /* Light text for visibility */
+    color: black; /* Ensure text is black */
 }
 
 /* Footer Styles */
 footer {
-    background-color: #001f3f;
+    background-color: #f0f0f0; /* Light gray footer for contrast */
     padding: 10px;
     text-align: center;
 }
 
-/* Modal Styles */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1000; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0, 0, 0, 0.8); /* Fallback color */
-}
-
-/* Modal Content Styles */
-.modal-content {
-    background-color: rgba(200, 200, 200, 0.9); /* Light gray background */
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888; /* Light gray border */
-    width: 80%; /* Could be more or less, depending on screen size */
-    border-radius: 10px; /* Rounded corners */
-    text-align: center; /* Center text within modal */
-}
-
-/* Close Button Styles */
-.close {
-    color: #ff6347; /* A vibrant color for the close button */
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer; /* Pointer cursor on hover */
-}
-
-/* Java code styling */
-.java-code {
-    background-color: rgba(0, 0, 0, 0.7); /* Dark background for code */
-    color: #00ff00; /* Bright green for code */
-    padding: 10px; /* Padding for better spacing */
-    border-radius: 8px; /* Rounded corners for the code block */
-    font-family: 'Courier New', Courier, monospace; /* Monospace font for code */
-    white-space: pre-wrap; /* Preserve whitespace */
-    margin-top: 15px; /* Space above code block */
-}
-
-/* Modal background image styles */
-.modal-background {
-    position: relative; /* Position relative for absolute children */
-    text-align: center; /* Center text within modal */
-}
-
-/* Background image */
-.modal-background:before {
-    content: '';
-    background-image: url('https://example.com/path-to-your-tree-branches-image.jpg'); /* Replace with your image URL */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.5; /* Slightly transparent */
-    z-index: -1; /* Behind the content */
-    background-size: cover; /* Cover the entire modal */
-}
-
-/* Icon styles */
-.icon {
-    width: 20px; /* Adjust the size of the icon */
-    vertical-align: middle; /* Align icons with text */
-}
-
 /* Contact Info Styles */
 .contact-info {
-    background-color: pink; /* Pink background for contact info */
+    background-color: lightpink; /* Light pink background for contact info */
     padding: 20px;
     border-radius: 8px; /* Rounded corners */
     display: none; /* Initially hidden */
     color: black; /* Text color */
     text-align: center; /* Centered text */
+}
+
+.icon {
+    width: 20px; /* Adjust the size of the icon */
+    vertical-align: middle; /* Align icons with text */
 }
