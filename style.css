@@ -30,9 +30,34 @@ nav ul li {
     margin: 0 15px;
 }
 
+nav ul li a {
+    color: black; /* Black text for navigation */
+}
+
 /* Main Section Styles */
 main {
+    padding: 40px; /* Increased padding for more space */
+}
+
+/* About Me Section */
+#my-story {
+    background-color: lightgreen; /* Light green background for My Story */
     padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Products Section */
+#products {
+    background-color: lightorange; /* Light orange background for Products */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Events Section */
+#events {
+    background-color: lightyellow; /* Light yellow background for Events */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
 }
 
 /* About Text Styles */
